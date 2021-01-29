@@ -1,3 +1,7 @@
+#eliminar BD
+
+drop database web;
+
 #Crear BD
 create database web;
 
@@ -31,5 +35,9 @@ update Usuario set edad = 2 where id = 2;
 
 #eliminar
 delete from Usuario where id = 4;
+
+#agregar valor unico para email
+alter table Usuario add unique (email);
+
 
 
